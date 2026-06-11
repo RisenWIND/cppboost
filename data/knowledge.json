@@ -1,0 +1,25 @@
+{
+  "knowledge_points": [
+    {
+      "id": 1,
+      "module_id": 1,
+      "title": "变量与数据类型",
+      "content": "# 变量与数据类型详解\n\n## 1. 什么是变量\n变量是计算机内存中的一个命名存储单元。当声明变量时，计算机会为其分配一块内存空间。\n\n## 2. 基本数据类型\n- int（整型）：通常占4字节，范围约-21亿到+21亿\n- float（单精度浮点）：占4字节\n- double（双精度浮点）：占8字节\n- char（字符）：占1字节，存储单个字符的ASCII值\n- bool（布尔）：占1字节，值为true或false\n\n## 3. 变量的命名规则\n- 必须以字母或下划线开头\n- 后续可包含字母、数字和下划线\n- 不能使用C++关键字\n- 区分大小写\n\n## 4. 变量初始化\n未初始化的变量存储的是该内存位置之前的随机值（垃圾值）。良好的编程习惯是在声明时初始化变量。",
+      "examples": ["int age = 18;", "double pi = 3.14159;", "char initial = 'A';"]
+    },
+    {
+      "id": 2,
+      "module_id": 1,
+      "title": "运算符详解",
+      "content": "# 运算符详解\n\n## 1. 算术运算符\n+, -, *, /, % （模运算，仅用于整数）\n\n## 2. 关系运算符\n==, !=, <, >, <=, >=\n结果是bool值（true或false）\n\n## 3. 逻辑运算符\n- &&（与）：两个条件都为true时结果为true\n- ||（或）：至少一个条件为true时结果为true\n- !（非）：取反\n\n## 4. 短路求值\n&&：如果左操作数为false，右操作数不被计算\n||：如果左操作数为true，右操作数不被计算\n\n## 5. 位运算符\n&（按位与）, |（按位或）, ^（按位异或）, ~（按位取反）, <<, >>",
+      "examples": ["int sum = 10 + 20;", "if(x > 0 && y > 0) { }", "bool flag = !true; // false"]
+    },
+    {
+      "id": 3,
+      "module_id": 1,
+      "title": "控制流语句",
+      "content": "# 控制流语句\n\n## 1. if-else语句\n- if语句用于单条件判断\n- if-else用于二分支选择\n- if-else if-else用于多分支选择\n\n## 2. switch语句\n- case标签必须是整数或枚举值\n- break语句跳出switch\n- 省略break会导致\"穿透\"（fall-through）\n- default是可选的，处理默认情况\n\n## 3. 循环语句\n- for循环：适合已知循环次数的情况\n- while循环：条件为真时执行\n- do-while循环：至少执行一次\n- break和continue：控制循环流程\n\n## 最佳实践\n- 尽量避免复杂的嵌套\n- 清晰的缩进提高代码可读性\n- 使用有意义的变量名",
+      "examples": ["if(age >= 18) { cout << \"Adult\"; }", "for(int i = 0; i < 10; i++) { }", "while(true) { if(condition) break; }"]
+    }
+  ]
+}
